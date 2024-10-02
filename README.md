@@ -3,12 +3,12 @@
 ---
 
 ## Day 1: Introduction to CSS and Basic Selectors
-- [ ] What is CSS and how it works (Introduction to Cascading Style Sheets)
-- [ ] Adding CSS to HTML (Inline, Internal, External)
-- [ ] Basic Syntax and Rules (Selectors, Properties, Values)
-- [ ] CSS Selectors (Element, Class, ID)
-- [ ] Understanding the Box Model (Content, Padding, Border, Margin)
-- [ ] **CSS Measurements**: Understanding units (`px`, `%`, `em`, `rem`, `vw`, `vh`)
+- [x] What is CSS and how it works (Introduction to Cascading Style Sheets)
+- [x] Adding CSS to HTML (Inline, Internal, External)
+- [x] Basic Syntax and Rules (Selectors, Properties, Values)
+- [x] CSS Selectors (Element, Class, ID)
+- [x] Understanding the Box Model (Content, Padding, Border, Margin)
+- [x] **CSS Measurements**: Understanding units (`px`, `%`, `em`, `rem`, `vw`, `vh`)
 
 ### Assignment:
 - [ ] Create an HTML page with external CSS that applies styles to headers, paragraphs, and buttons using element, class, and ID selectors.
