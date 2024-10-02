@@ -1,0 +1,37 @@
+*{
+    background-color: green;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    /* margin: auto 100px; */
+}
+p{
+    text-align: center;
+    color: black;
+}
+
+#box{
+    width: 50vw;
+    height: 50vh;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+h2{
+    height: 50%;
+    font-size: 1.5em;
+}
+
+section h1{
+    margin-bottom: 30px;
+}
+.ug20{
+    font-size: 2rem;
+}
