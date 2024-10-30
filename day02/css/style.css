@@ -1,0 +1,49 @@
+*{
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /* line-height: 2; */
+}
+
+body{
+    background-color: rgba(2, 2, 5, 0);
+    color: #0f0;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: 2px solid red;
+}
+img{
+    border: 2px solid #0f0;
+    width: 33%;
+    height: auto;
+    /* border-radius: 30%; */
+    margin:  auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    width: 100vw;
+    border: 2px solid #0f0;
+    gap: 10px;
+    justify-content: space-evenly;
+    position:  fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+
+}
+.it1{
+    align-self: self-start;
+}
+aside{
+    z-index: 110;
+    color: red;
+    position: relative;
+}
