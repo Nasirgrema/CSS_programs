@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+             sans: ['Roboto', 'Arial', 'sans-serif'], // Custom font family
+          },
+          colors: {
+            ink: '#333',       // A dark gray color
+            ocean: '#1E90FF',  // Custom ocean blue
+            forest: '#228B22'  // Custom forest green
+          },
+          fontSize: {
+            'small': '0.625rem', // Extra extra small text
+            'medium': '1.75rem',  // Extra extra large text
+            'huge': '2.5rem',     // Extra extra extra large text
+          },
+          spacing: {
+            '01': '1rem',       
+            '02': '2rem',       
+            '03': '3rem',      
+          },
+          animation: {
+            bounce: 'bounce 1s infinite', // Custom bounce animation
+            fadeIn: 'fadeIn 0.5s ease-in-out', // Custom fade-in animation
+          },
+          keyframes: {
+            bounce: {
+              '0%, 100%': { transform: 'translateY(-25%)' },
+              '50%': { transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          }
+        }
+      }
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      h1 {
+        @apply text-4xl font-bold text-ink;
+      }
+      p {
+        @apply text-gray-700 text-lg;
+      }
+      button {
+        @apply font-semibold px-4 py-2 rounded;
+      }
+    }
+
+    @layer components {
+      .btn {
+        @apply bg-ocean text-white py-2 px-4 rounded-lg hover:bg-ink transition duration-300;
+      }
+      .card {
+        @apply bg-white shadow-lg rounded-lg p-6;
+      }
+      .alert {
+        @apply bg-red-100 border-l-4 border-red-500 text-red-700 p-4;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Header -->
+  <header class="mb-6">
+    <h1>Welcome to Tailwind CSS Layers</h1>
+    <p>Understanding base, components, and utilities for organized styling</p>
+  </header>
+
+  <!-- Alert -->
+  <div class="alert mb-6">
+    <strong>Notice:</strong> This page uses Tailwind CSS's layers for styling!
+  </div>
+
+  <!-- Card Section -->
+  <div class="card mb-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">Our Custom Card</h2>
+    <p>This card component is styled using both component and utility classes. You can add as many utility classes as needed to customize its layout.</p>
+    <button class="btn mt-4">Learn More</button>
+  </div>
+
+  <!-- Button Section -->
+  <div class="text-center">
+    <button class="btn">Click Me</button>
+  </div>
+
+</body>
+</html>

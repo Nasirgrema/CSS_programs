@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            geek: '#2E8B57',
+            ink: '#333',
+            txt: '#FF4500',
+          },
+          spacing:{
+            '01': '1rem',
+            '02': '2rem',
+            '03': '3rem',
+          },
+          fontSize: {
+            'small': '2rem',
+            'medium': '1.75rem',
+            'huge': '2.5rem',
+          },
+            animation: {
+                bounce: 'bounce 1s',
+                fadeIn: 'fadeIn 0.5s ease-in-out',
+            },
+            // Screen sizes
+            screens: {
+                'sm': '335px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+            },
+        }
+      }
+    }
+  </script>
+    <style type="text/tailwindcss">
+        @layer base {
+        h1 {
+            @apply text-4xl font-bold text-ink text-center;
+        }
+        p {
+            @apply text-gray-700 text-lg;
+        }
+        button {
+            @apply font-semibold px-4 py-2 rounded;
+        }
+        }
+        @layer components {
+      .btn {
+        @apply text-white py-2 px-4 rounded-lg hover:bg-white hover:text-green-400 transition duration-300;
+      }
+      .card {
+        @apply bg-white shadow-lg rounded-lg p-6;
+      }
+      .alert {
+        @apply bg-red-100 border-l-4 border-red-500 text-red-700 p-4;
+      }
+    }
+        </style>
+</head>
+<body class="bg-green-500 sm:bg-blue-500 text-01 p-03 md:bg-gray-500 md:text-03 lg:bg-red-500">
+  <!-- <h1 class="text-small font-bold underline text-txt  p-03">
+    Hello world!
+  </h1>
+    <button class="text-white text-small px-02 py-01 rounded transition duration-300 ease-in-out transform hover:scale-105 animate-bounce">
+       Welcome to the Customized Tailwind Page
+    </button> -->
+
+    <h1>
+        this is a test
+    </h1>
+
+    <button class="btn">
+        Click Me!
+    </button>
+
+</body>
+</html>
